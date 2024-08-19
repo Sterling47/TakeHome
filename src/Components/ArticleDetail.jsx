@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ArticleDetail = ({ articles }) => {
   const { title } = useParams();
@@ -10,10 +10,11 @@ const ArticleDetail = ({ articles }) => {
   return (
     <div className="article-detail">
       <h1>{article.title}</h1>
-      <img src={article.urlToImage} alt={article.title} />
+      <img src={article.urlToImage} alt={article.title} className='article-img'/>
       <small>{new Date(article.publishedAt).toLocaleDateString()}</small>
       <p>{article.content}</p>
       <p><strong>Source:</strong> {article.source.name}</p>
+      <Link to='/' className='home-bttn'>Home</Link>
     </div>
   );
 };

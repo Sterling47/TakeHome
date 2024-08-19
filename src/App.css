@@ -1,0 +1,68 @@
+/* GLOBAL STYLE SHEET */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+    background-color: rgb(130, 111, 111);
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 21, 21, 0.861);
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Make sure the nav is above other content */
+}
+
+.article-img {
+    height: 20rem;
+    width: 20rem;
+}
+
+.home-bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 5%;
+}
+
+.article-list, .article-detail {
+    flex: 1; /* Take up remaining space */
+    padding: 1rem; /* Optional: Add some padding for better spacing */
+}
+
+.article-card, .article-detail {
+    display: flex;
+    flex-direction: column;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(176, 155, 100);
+    font-size: 135%;
+}
+
+.search-bar {
+    margin: 2rem;
+}

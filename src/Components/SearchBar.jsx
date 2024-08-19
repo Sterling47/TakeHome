@@ -14,6 +14,7 @@ const SearchBar = ({ setSearchQuery }) => {
       value={input}
       onChange={handleSearch}
       placeholder="Search articles..."
+      className='search-bar'
     />
   );
 };

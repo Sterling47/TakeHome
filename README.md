@@ -2,6 +2,7 @@
 A Tech News website which displays articles for a user to click on and get more information about the story. 
 
 ## Tech 
+Vite
 React.Js
 NewsApi
 
